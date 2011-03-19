@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USER='root'
-PASSWORD='sqlsucks'
+PASSWORD=''
 BACKUP='/tmp'
 
 databases=`mysql --user=$USER --password=$PASSWORD -e 'SHOW DATABASES;' | grep -Ev '(mysql|Database|information_schema)'`
